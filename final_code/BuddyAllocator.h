@@ -41,6 +41,7 @@ public:
     b->next = this->head;
     this->head=b;
     return head;
+
         // if (head == nullptr) {
         //     b->next= nullptr;
         //     head = b;
@@ -50,6 +51,7 @@ public:
         //     head = b;
         // }
         // return head;
+
     }
 
 	BlockHeader* remove (BlockHeader* b){  // removes a block from the list

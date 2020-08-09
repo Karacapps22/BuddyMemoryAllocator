@@ -1,4 +1,4 @@
-//Kara Capps
+
 #include <stdlib.h>
 #include <stdio.h>
 #include "Ackerman.h"
@@ -77,13 +77,18 @@ int main(int argc, char** argv) {
     cout << memory_length << endl;
 
   // create memory manager
-  //cout << "before allocation" << endl;
+
+
+
   BuddyAllocator * allocator = new BuddyAllocator(basic_block_size, memory_length);
 
   // the following won't print anything until you start using FreeList and replace the "new" with your own implementation
   easytest (allocator);
 
-  //cout << "Before Ackerman" << endl;
+
+
+
+
   // stress-test the memory manager, do this only after you are done with small test cases
     cout << endl;
     cout << "testing ackerman" << endl;
@@ -92,23 +97,6 @@ int main(int argc, char** argv) {
   am->test(allocator);
     
 
-//    cout << endl;
-//    basic_block_size = 2*128;
-//    memory_length = 512*1024*2;
-//    cout << "testing ackerman" << endl;
-//    cout <<"test basic_block_size= " << basic_block_size << endl;
-//    cout << "test memory_length= " << memory_length << endl;
-//    Ackerman* am1 = new Ackerman ();
-//    am1->test(allocator);
-//
-//    cout << endl;
-//    basic_block_size = 2*2*128;
-//    memory_length = 2*512*1024*2;
-//    cout << "testing ackerman" << endl;
-//    cout <<"test basic_block_size= " << basic_block_size << endl;
-//    cout << "test memory_length= " << memory_length << endl;
-//    Ackerman* am2 = new Ackerman ();
-//    am2->test(allocator);
     
     
 
