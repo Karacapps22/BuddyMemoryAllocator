@@ -78,10 +78,15 @@ int main(int argc, char** argv) {
 
   // create memory manager
 
+
+
   BuddyAllocator * allocator = new BuddyAllocator(basic_block_size, memory_length);
 
   // the following won't print anything until you start using FreeList and replace the "new" with your own implementation
   easytest (allocator);
+
+
+
 
 
   // stress-test the memory manager, do this only after you are done with small test cases
@@ -91,7 +96,6 @@ int main(int argc, char** argv) {
   Ackerman* am = new Ackerman ();
   am->test(allocator);
     
-
 
     
     
